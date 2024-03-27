@@ -15,7 +15,7 @@
                     var data = JSON.parse(xhr.responseText);
                     var rate = data.bpi.USD.rate_float;
                     var totalPrice = rate * bitcoinAmount;
-                    document.getElementById("result").innerText = "Total: " + totalPrice.toFixed(2) + " USD";
+                    document.getElementById("result").innerText = "Total: " + totalPrice.toFixed(2) + " EUR";
                 }
             };
             xhr.send();
