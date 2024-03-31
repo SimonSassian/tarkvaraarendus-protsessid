@@ -1,0 +1,109 @@
+#test {
+    font-family: 'Comic Sans MS';
+    color: rgb(73, 136, 204);
+}
+
+.body1 {
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 1s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+.body2 {
+    -webkit-animation: bgcolor2 20s infinite;
+    animation: bgcolor2 1s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+.button-blue {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-red {
+    background-color: red;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#linkcolor {
+    animation: textcolor 1s infinite;
+}
+
+#wiplinkcolor {
+    color: gold;
+}
+
+h1 {
+    animation: textcolor 1s infinite;
+}
+
+h2 {
+    animation: textcolor 1s infinite;
+}
+
+h3 {
+    animation: textcolor 1s infinite;
+}
+
+
+p {
+    font-family: 'Comic Sans MS';
+    animation: textcolor 1s infinite;
+}
+
+ul {
+    font-family: 'Comic Sans MS';
+    animation: textcolor 1s infinite;
+}
+
+@keyframes textcolor {
+    0% {
+        color: black;
+    }
+
+    50% {
+        color: white;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+@keyframes bgcolor {
+    0% {
+        background-color: white
+    }
+
+    50% {
+        background-color: black
+    }
+
+    100% {
+        background-color: white
+    }
+}
+
+@keyframes bgcolor2 {
+    0% {
+        background-color: blue
+    }
+
+    50% {
+        background-color: gold
+    }
+
+    100% {
+        background-color: blue
+    }
+}
