@@ -4,73 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Case-vahendid ja näited</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        ul li::before {
+            content: "✔️";
+            margin-right: 10px;
+            color: green;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Case-vahendite Tutvustus:</h1>
+    <h1>CASE-vahendite Tutvustus:</h1>
 
     <p>
-        CASE-vahendid on tarkvaratehnika tööriistad, mis aitavad arendajatel tõhusamalt hallata ja automatiseerida tarkvaraarenduse elutsüklit. Need vahendid hõlmavad erinevaid funktsionaalsusi alates nõuete analüüsist ja kavandamisest kuni testimise ja hoolduseni. CASE-vahendid võivad olla kas üldotstarbelised või spetsialiseerunud konkreetsetele arendusprotsessidele.
-        <br>
-        Potentsiaalsed eelised CASE-vahendite kasutamisel hõlmavad paremat tarkvara kvaliteeti, suuremat tootlikkust, vähem vigu ja paremat dokumentatsiooni. Samas võib nende kasutamisel tekkida ka väljakutseid, näiteks suurenenud keerukus või kohandatavuse puudumine vastavalt konkreetsetele vajadustele.
+        CASE-vahendid (Computer-Aided Software Engineering) on tarkvaratehnika tööriistad, mis aitavad arendajatel tõhusamalt hallata ja automatiseerida tarkvaraarenduse elutsüklit. CASE-vahendid jaotatakse sageli kaheks: lower CASE ja upper CASE vahenditeks. Lower CASE vahendid keskenduvad arenduse hilisematele etappidele, nagu koodi genereerimine ja testimine, samas kui upper CASE vahendid keskenduvad arenduse varasematele etappidele, nagu süsteemi analüüs ja disain.
     </p>
 
     <hr>
 
-    <h2>Nõuete Haldamise CASE-vahend:</h2>
+    <div class="section">
+        <h2>Lower CASE vahendid</h2>
+        <p>
+            Lower CASE vahendid toetavad tarkvaraarenduse hilisemaid etappe, sealhulgas koodi genereerimist, testimist ja hooldust. Need vahendid aitavad arendajatel suurendada tootlikkust ja vähendada vigade arvu, automatiseerides mitmesuguseid arendustegevusi.
+        </p>
 
-    <img src="requirement_management_tool.jpg" alt="Nõuete haldamise CASE-vahend">
-
-    <p>
-        Nõuete haldimise CASE-vahendid aitavad arendajatel korraldada ja dokumenteerida tarkvara nõudeid. Näiteks võib selline vahend olla kasulik suurtes projektides, kus on palju nõudeid ja nende muudatusi.
-    </p>
-
-    <p>
-        Näited:
+        <h3>Nõuete Haldamise Vahend: Jira</h3>
+        <img src="requirement_management_tool.jpg" alt="Jira nõuete haldamise vahend">
+        <p>Jira on projektijuhtimise tarkvara, mis võimaldab nõuete haldamist koos ülesannete jälgimise ja prioriteetide seadmisega.</p>
         <ul>
-            <li>Projektijuhtimise tarkvara, näiteks Jira, võimaldab nõuete haldamist koos ülesannete jälgimise ja prioriteetide seadmisega.</li>
-            <li>Kohandatud nõuete haldamise süsteem, mis on loodud vastavalt konkreetse ettevõtte vajadustele ja protsessidele.</li>
-            <li>Ärianalüüsi platvormid, nagu IBM Rational DOORS, mis võimaldavad keeruliste nõuete struktureerimist ja jälgimist.</li>
+            <li>Nõuete ja ülesannete haldamine</li>
+            <li>Agile metoodikate tugi</li>
+            <li>Integreerimine teiste arendusvahenditega</li>
         </ul>
-    </p>
 
-    <hr>
-
-    <h2>Koodi Genereerimise CASE-vahend:</h2>
-
-    <img src="code_generation_tool.jpg" alt="Koodi genereerimise CASE-vahend">
-
-    <p>
-        Koodi genereerimise CASE-vahendid võimaldavad automaatselt genereerida tarkvara allikakoode vastavalt kavandatud mudelile või spetsifikatsioonile. See aitab vähendada inimvigade arvu ja kiirendada arendusprotsessi.
-    </p>
-
-    <p>
-        Näited:
+        <h3>Koodi Genereerimise Vahend: Modelio</h3>
+        <img src="code_generation_tool.jpg" alt="Modelio koodi genereerimise vahend">
+        <p>Modelio võimaldab mudeli põhjal genereerida Java, C++ ja teisi programmeerimiskeeli.</p>
         <ul>
-            <li>Modelio, mis võimaldab mudeli põhjal genereerida Java, C ++ ja teisi keeli.</li>
-            <li>CodeSmith, mis on platvormiülene tööriist kodeerimiseks .NET platvormil.</li>
-            <li>Qt loomevahendid, mis võimaldavad kiiret ja lihtsat GUI koodi genereerimist C++ ja Pythoni projektidele.</li>
+            <li>Mudelite põhjal koodi genereerimine</li>
+            <li>Toetus UML ja BPMN modelleerimisele</li>
+            <li>Integreeritud projektijuhtimise tööriistad</li>
         </ul>
-    </p>
 
-    <hr>
-
-    <h2>Testimise CASE-vahend:</h2>
-
-    <img src="testing_tool.jpg" alt="Testimise CASE-vahend">
-
-    <p>
-        Testimise CASE-vahendid aitavad automatiseerida testimisprotsessi, sealhulgas testide loomist, täitmist ja tulemuste analüüsi. See parandab testimise efektiivsust ja aitab tagada tarkvara kvaliteeti.
-    </p>
-
-    <p>
-        Näited:
+        <h3>Testimise Vahend: Selenium</h3>
+        <img src="testing_tool.jpg" alt="Selenium testimise vahend">
+        <p>Selenium on avatud lähtekoodiga raamistik veebipõhiste rakenduste testimiseks.</p>
         <ul>
-            <li>Selenium, mis on avatud lähtekoodiga raamistik veebipõhiste rakenduste testimiseks.</li>
-            <li>JUnit, mis on Java-põhine raamistik ühiktestide kirjutamiseks ja käitamiseks.</li>
-            <li>Postman, mis on API testimise ja dokumenteerimise tööriist, mis võimaldab automatiseeritud testide loomist ja käivitamist RESTful teenuste jaoks.</li>
+            <li>Veebirakenduste automatiseeritud testimine</li>
+            <li>Toetus mitmele programmeerimiskeelele</li>
+            <li>Integreerimine pideva integreerimise tööriistadega</li>
         </ul>
-    </p>
+    </div>
+
+    <div class="section">
+        <h2>Upper CASE vahendid</h2>
+        <p>
+            Upper CASE vahendid toetavad tarkvaraarenduse varasemaid etappe, sealhulgas süsteemi analüüsi, nõuete määratlemist ja disaini. Need vahendid aitavad arendajatel struktureerida ja kavandada tarkvarasüsteeme tõhusamalt ja täpsemalt.
+        </p>
+
+        <h3>Projekti Planeerimise Vahend: Microsoft Project</h3>
+        <img src="project_management_tool.jpg" alt="Microsoft Project">
+        <p>Microsoft Project on projektijuhtimise tööriist, mis aitab planeerida, hallata ja jälgida projekte.</p>
+        <ul>
+            <li>Gantti diagrammid ja ajakava haldamine</li>
+            <li>Ressursside ja eelarve haldus</li>
+            <li>Raportite ja aruannete genereerimine</li>
+        </ul>
+
+        <h3>Süsteemi Modelleerimise Vahend: IBM Rational Rose</h3>
+        <img src="system_modeling_tool.jpg" alt="IBM Rational Rose">
+        <p>IBM Rational Rose on visuaalne modelleerimisvahend, mis toetab UML-i ja aitab arendajatel luua süsteemi arhitektuuri ja disaini.</p>
+        <ul>
+            <li>Toetus UML diagrammidele</li>
+            <li>Visuaalne disain ja analüüs</li>
+            <li>Integreerimine teiste arendusvahenditega</li>
+        </ul>
+
+        <h3>Nõuete Halduse Vahend: IBM Rational DOORS</h3>
+        <img src="requirements_management_tool.jpg" alt="IBM Rational DOORS">
+        <p>IBM Rational DOORS on võimas tööriist keeruliste nõuete struktureerimiseks ja jälgimiseks.</p>
+        <ul>
+            <li>Keeruliste nõuete haldamine</li>
+            <li>Jälgitavus ja muutuste juhtimine</li>
+            <li>Integreerimine teiste IBM Rational tööriistadega</li>
+        </ul>
+    </div>
 
 </body>
 </html>
