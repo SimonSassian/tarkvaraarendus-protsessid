@@ -1,38 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SDLC Mudelid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .model {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .pros-cons {
+            display: flex;
+            justify-content: space-between;
+        }
+        .pros, .cons {
+            width: 45%;
+        }
+        .pros ul, .cons ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .pros ul li::before {
+            content: "✔️";
+            margin-right: 10px;
+            color: green;
+        }
+        .cons ul li::before {
+            content: "❌";
+            margin-right: 10px;
+            color: red;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
 </head>
 <body>
 
     <h1>SDLC Mudelid</h1>
 
-    <h2>1. Vesi- ja Liivaämbri Mudelid:</h2>
-    <p>
-        Vesi- ja liivaämbri mudelid on traditsioonilised, lineaarsed arendusmudelid.
-    </p>
+    <div class="model">
+        <h2>1. Veemudel:</h2>
+        <p>
+            Veemudel on traditsiooniline lineaarne arendusmudel, kus iga etapp toimub ainult üks kord ja järjestikku.
+        </p>
+        <img src="https://example.com/veemudel.jpg" alt="Veemudel">
+        <div class="pros-cons">
+            <div class="pros">
+                <h3>Plussid:</h3>
+                <ul>
+                    <li>Lihtne mõista ja rakendada</li>
+                    <li>Selged etapid ja eesmärgid</li>
+                    <li>Hea dokumenteerimise tase</li>
+                </ul>
+            </div>
+            <div class="cons">
+                <h3>Miinused:</h3>
+                <ul>
+                    <li>Jäik ja paindumatu</li>
+                    <li>Muudatusi on raske teha</li>
+                    <li>Risk projekti hilinenud probleemide avastamiseks</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-    <h2>2. Spiraalmudel:</h2>
-    <p>
-        Spiraalmudel ühendab veekogu- ja prototüübipõhiseid lähenemisviise ning keskendub riskide juhtimisele.
-    </p>
+    <div class="model">
+        <h2>2. Spiraalmudel:</h2>
+        <p>
+            Spiraalmudel ühendab veemudeli ja prototüübipõhiseid lähenemisviise ning keskendub riskide juhtimisele läbi korduvate tsüklite.
+        </p>
+        <img src="https://example.com/spiraalmudel.jpg" alt="Spiraalmudel">
+        <div class="pros-cons">
+            <div class="pros">
+                <h3>Plussid:</h3>
+                <ul>
+                    <li>Hea riskide juhtimine</li>
+                    <li>Paindlik ja kohanemisvõimeline</li>
+                    <li>Sobib suurtele ja keerukatele projektidele</li>
+                </ul>
+            </div>
+            <div class="cons">
+                <h3>Miinused:</h3>
+                <ul>
+                    <li>Võib olla keeruline ja kallis</li>
+                    <li>Nõuab kogenud juhtimist</li>
+                    <li>Raskem planeerida ja prognoosida</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-    <h2>3. Esimene-müü-õnnele Mudel (FDD):</h2>
-    <p>
-        FDD mudel rõhutab funktsionaalsete oskuste määratlemist ja planeerimist iga funktsiooni üksikasjaliku disainiga.
-    </p>
+    <div class="model">
+        <h2>3. Feature-Driven Development (FDD):</h2>
+        <p>
+            FDD mudel keskendub funktsionaalsete oskuste määratlemisele ja planeerimisele, iga funktsiooni üksikasjaliku disainiga.
+        </p>
+        <img src="https://example.com/fdd.jpg" alt="FDD">
+        <div class="pros-cons">
+            <div class="pros">
+                <h3>Plussid:</h3>
+                <ul>
+                    <li>Selge ja organiseeritud lähenemine</li>
+                    <li>Hea suurtele ja hajutatud meeskondadele</li>
+                    <li>Fookus äriväärtuse loomisel</li>
+                </ul>
+            </div>
+            <div class="cons">
+                <h3>Miinused:</h3>
+                <ul>
+                    <li>Nõuab põhjalikku planeerimist</li>
+                    <li>Võib olla keeruline väiksematele projektidele</li>
+                    <li>Pidev jälgimine ja värskendamine vajalik</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-    <h2>4. Ekstreemprogrammeerimise (XP) Mudel:</h2>
-    <p>
-        XP on kergekaaluline ja paindlik arendusmetoodika, mis keskendub suhtlusele, lihtsusele ja tagasisidele.
-    </p>
+    <div class="model">
+        <h2>4. Ekstreemprogrammeerimise (XP) Mudel:</h2>
+        <p>
+            XP on kergekaaluline ja paindlik arendusmetoodika, mis keskendub suhtlusele, lihtsusele ja tagasisidele.
+        </p>
+        <img src="https://example.com/xp.jpg" alt="XP">
+        <div class="pros-cons">
+            <div class="pros">
+                <h3>Plussid:</h3>
+                <ul>
+                    <li>Kiire kohanemine muutustega</li>
+                    <li>Fookus kvaliteedile ja testimisele</li>
+                    <li>Parandab meeskonna suhtlust ja koostööd</li>
+                </ul>
+            </div>
+            <div class="cons">
+                <h3>Miinused:</h3>
+                <ul>
+                    <li>Võib olla liiga intensiivne</li>
+                    <li>Nõuab pidevat klientide kaasamist</li>
+                    <li>Sobib paremini väiksematele meeskondadele</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-    <h2>5. Agile:</h2>
-    <p>
-        Agile on paindlik arendusmetoodika, mis rõhutab koostööd, kliendikeskset lähenemist ja iteratiivset arengut.
-    </p>
+    <div class="model">
+        <h2>5. Agile:</h2>
+        <p>
+            Agile on paindlik arendusmetoodika, mis rõhutab koostööd, kliendikeskset lähenemist ja iteratiivset arengut.
+        </p>
+        <img src="https://example.com/agile.jpg" alt="Agile">
+        <div class="pros-cons">
+            <div class="pros">
+                <h3>Plussid:</h3>
+                <ul>
+                    <li>Kiire reageerimine muutustele</li>
+                    <li>Pidev kliendi tagasiside</li>
+                    <li>Suurepärane riskijuhtimine</li>
+                </ul>
+            </div>
+            <div class="cons">
+                <h3>Miinused:</h3>
+                <ul>
+                    <li>Nõuab kogenud meeskonda</li>
+                    <li>Võib olla keeruline suurte organisatsioonide jaoks</li>
+                    <li>Fookus võib muutuda ebajärjekindlaks</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
